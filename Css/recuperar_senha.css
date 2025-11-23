@@ -1,0 +1,111 @@
+/* Estilos gerais do corpo */
+* {
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no width */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5DC; /* Bege claro do tema */
+    color: #4B382F; /* Marrom escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para a caixa de login */
+.login-box {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%; /* Largura adaptável para mobile */
+    max-width: 420px; /* Largura máxima maior */
+    text-align: center;
+}
+
+/* Estilo do título */
+.login-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #A0522D; /* Cor marrom do tema */
+    margin-bottom: 20px;
+}
+
+/* Estilo do grupo de input com ícone */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Estilo do campo de input */
+.login-input {
+    width: 100%;
+    padding: 10px 12px;
+    padding-right: 40px; /* Espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login-input:focus {
+    border-color: #FF8C00; /* Laranja do tema */
+}
+
+/* Estilo do ícone */
+.login__icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+#toggle-password {
+    cursor: pointer;
+}
+
+/* Estilo do botão de login */
+.login-button {
+    width: 100%; /* Ocupa a largura total da caixa, centralizado */
+    padding: 12px;
+    background-color: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; /* Espaço para o link de recuperar senha */
+}
+
+.login-button:hover {
+    background-color: #8B4513; /* Marrom mais escuro ao passar o mouse */
+}
+
+/* Estilo do link de recuperação de senha */
+.login__forgot {
+    color: #FF8C00; /* Laranja do tema */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.login__forgot:hover {
+    text-decoration: underline;
+}
+
+/* Media query para telas maiores */
+@media (min-width: 768px) {
+    .login-box {
+        max-width: 420px; /* Mantém a largura máxima */
+        padding: 40px; /* Aumenta o padding para telas maiores */
+    }
+    .login-titulo {
+        font-size: 2rem;
+    }
+}

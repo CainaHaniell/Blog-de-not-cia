@@ -1,0 +1,108 @@
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5DC; /* Bege claro do tema */
+    color: #4B382F; /* Marrom escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para a caixa de login */
+.login-box {
+    background-color: white;
+    padding: 30px; /* Reduzi o padding para um visual mais compacto */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 320px; /* Largura máxima menor para o formulário */
+    text-align: center;
+}
+
+/* Estilo do título */
+.login-titulo {
+    font-size: 1.5rem; /* Fonte menor para se ajustar à caixa */
+    font-weight: 700;
+    color: #A0522D; /* Cor marrom do tema */
+    margin-bottom: 20px;
+}
+
+/* Estilo do grupo de input com ícone */
+.input-group {
+    position: relative;
+    margin-bottom: 15px; /* Espaço entre os campos */
+}
+
+/* Estilo do campo de input */
+.login-input {
+    width: 90%;
+    padding: 10px 12px;
+    padding-right: 40px; /* Espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login-input:focus {
+    border-color: #FF8C00; /* Laranja do tema */
+}
+
+/* Estilo do ícone */
+.login__icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+#toggle-password {
+    cursor: pointer;
+}
+
+.login-forgot{
+  display: flex;
+  color: #A0522D;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 2%;
+  justify-content: center;
+}
+/* Estilo do botão de login */
+.login-button {
+    display: flex;
+    width: 50%;
+    padding: 12px;
+    background-color: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.login-button:hover {
+    background-color: #8B4513; /* Marrom mais escuro ao passar o mouse */
+}
+
+
+/* Media query para telas maiores (para manter a responsividade) */
+@media (min-width: 768px) {
+    .login-box {
+        max-width: 380px;
+        padding: 40px;
+    }
+    .login-titulo {
+        font-size: 2rem;
+    }
+}
